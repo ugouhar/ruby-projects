@@ -2,8 +2,6 @@ require './operations.rb'
 require './student'
 include Operations
 
-$students = Array.new
-
 def main
   puts "Welcome to Student DB!! \n "
 
@@ -18,7 +16,7 @@ def main
       when "2"
         Operations.get_student()
       when "3"
-        Operations.update_student($students)
+        Operations.update_student()
       when "4"
         Operations.delete_student()
       when "5"

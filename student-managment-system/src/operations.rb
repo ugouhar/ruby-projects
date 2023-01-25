@@ -31,7 +31,7 @@ module Operations
     end
   end
 
-  def update_student(students)
+  def update_student()
     puts "UPDATING STUDENT DETAILS"
     puts "-----------------------"
     print "Enter student roll number: "
