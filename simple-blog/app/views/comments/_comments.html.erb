@@ -1,0 +1,10 @@
+<h3>Comments</h3>
+<% @post.comments.each do |comment| %>
+  <p>
+    <strong><%= comment.username %></strong>: <%= comment.body %>
+    <%= link_to "[x]", [comment.post, comment], data: {
+      turbo_method: :delete, 
+      turbo_confirm: "Are you sure?"}
+      %>    
+  </p>
+<% end %>
